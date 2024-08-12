@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Yangiliklar ro'yxati</title>
+</head>
+<body>
+<h1>Yangiliklar</h1>
+{% for news in news_list %}
+    <h3>
+        <a href="{% url 'news_detail' news.id %}">{{ news.title }}</a>
+    </h3>
+{% endfor %}
+</body>
+</html>
+
+<b></b>
